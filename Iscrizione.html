@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Registrazione al sito</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        
+        label {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            width: 300px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 300px;
+            height: 30px;
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: navy;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #001f4d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registrazione al sito</h1>
+    <form action="#" method="POST">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="cognome">Cognome</label>
+        <input type="text" id="cognome" name="cognome" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="eta">Età</label>
+        <input type="text" id="eta" name="eta">
+        
+        <label for="sesso">Sesso</label>
+        <select id="sesso" name="sesso">
+            <option value="maschio">Maschio</option>
+            <option value="femmina">Femmina</option>
+            <option value="altro">Altro</option>
+        </select>
+        
+        <label for="interessi">Interessi</label>
+        <textarea id="interessi" name="interessi"></textarea>
+        
+        <input type="submit" value="Registrati">
+    </form>
+</body>
+</html>

@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+  <script>
+    // Esempio di interazione con JavaScript
+    const detailsContainer = document.querySelector('.details-container');
+    const highlightParagraph = detailsContainer.querySelector('.highlight');
+    
+    // Aggiungi un gestore di eventi al passaggio del mouse sul paragrafo evidenziato
+    highlightParagraph.addEventListener('mouseover', function() {
+      this.style.color = 'blue';
+    });
+    
+    // Rimuovi il colore personalizzato quando il mouse esce dal paragrafo evidenziato
+    highlightParagraph.addEventListener('mouseout', function() {
+      this.style.color = '';
+    });
+  </script>
+
   <title>Canottaggio - Centro Remiero</title>
   <style>
     body {
